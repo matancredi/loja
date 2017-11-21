@@ -6,7 +6,7 @@
 </div>
 
 <div  id="menu" class="col-12">
-	<nav class="navbar navbar-expand-lg" id="menu">
+	<nav class="navbar navbar-expand-lg col-9 offset-3" id="menu">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.php">Página Inicial</a></li>

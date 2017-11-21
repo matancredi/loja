@@ -27,17 +27,6 @@ background-color:#2E4053;
 
 }
 
-/* li{
-text-transform:uppercase;
-list-style-type: none; //pra tirar as bolinhas de cada item da lista
-display:inline-block;
-float:left;
-text-align: center;
-padding: 16px;
-margin-right:100px;
-color:black;
-} */
-
 #galeria{
 background-color: #f5f5f5;
 }
@@ -49,6 +38,7 @@ margin:5px;
 
 #galeria .card img{
 height:330px;
+padding: 2px;
 }
 
 
