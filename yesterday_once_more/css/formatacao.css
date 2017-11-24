@@ -1,0 +1,81 @@
+﻿h1{
+padding: 30px;
+color:white;
+font-family:sans-serif;
+text-align:center;
+background-color:#a37b17 ;
+
+}
+
+#fundo{
+
+    height: 190px;
+}
+
+
+
+h2{
+text-align:center;
+padding:20px;
+
+}
+
+h3{
+text-align:center;
+padding:30px;
+}
+
+body{
+background-color:#909497;
+}
+
+#menu{
+background-color:#a37b17 ;
+text-transform: uppercase;
+}
+
+#produto{
+	float:left;
+	text-align:center;
+	padding:10px;
+}
+
+#galeria{
+	padding:25px;
+background-color: #909497;
+}
+
+#galeria .card{
+padding:0;
+margin:5px;
+background-color: #909497;
+}
+
+#galeria .card img{
+height:310px;
+padding: 2px;
+}
+
+#detalhes{
+	text-align:center;
+	font-weight:bold;
+	font-variant:small-caps;
+	}
+
+#cadastro{
+text-align:center;
+margin:10px;
+}
+
+footer{
+background-color:#a37b17 ;
+color:white;
+font-style: italic;
+
+
+
+}
+
+a:visited{
+color:white;
+}
