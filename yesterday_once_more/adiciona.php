@@ -16,29 +16,36 @@ if(isset($_POST) && !empty($_POST) ){
         
     }
 	
-	   else if(empty($_POST['autor'])){
+	   else if(empty($_POST['artista'])){
         
         $success = false;
-        $erro = "Informe o autor";
+        $erro = "Informe o artista";
     }
 	
-    else if(empty($_POST['isbn'])){
+    else if(empty($_POST['descricao'])){
         
         $success = false;
-        $erro = "Informe o isbn";
+        $erro = "Informe uma descricao";
     }
 	
-	 else if(empty($_POST['descricao'])){
+	 else if(empty($_POST['ano'])){
         
         $success = false;
-        $erro = "Informe a descricao";
+        $erro = "Informe o ano";
     }
 	
-	 else if(empty($_POST['editora'])){
+	 else if(empty($_POST['gravadora'])){
         
         $success = false;
-        $erro = "Informe a editora";
+        $erro = "Informe a gravadora";
     }
+	
+	 else if(empty($_POST['categoria'])){
+        
+        $success = false;
+        $erro = "Informe a categoria";
+    }
+	
 	   else if(empty($_POST['preco'])){
         
         $success = false;
@@ -46,12 +53,13 @@ if(isset($_POST) && !empty($_POST) ){
     }
     else{
         
-        $sqlInsert = "Insert INTO livros(titulo,autor,isbn,descricao,editora,preco)" //comando para inserir as informações obtidas no formaulário no banco de dados
+        $sqlInsert = "Insert INTO discos(titulo,artista,descricao,ano,gravadora,categoria,preco)" //comando para inserir as informações obtidas no formaulário no banco de dados
             ." VALUES('{$_POST['titulo']}'
-,'{$_POST['autor']}'
-,'{$_POST['isbn']}'
+,'{$_POST['artista']}'
 ,'{$_POST['descricao']}'
-,'{$_POST['editora']}'
+,'{$_POST['ano']}'
+,'{$_POST['gravadora']}'
+,'{$_POST['categoria']}'
 ,'{$_POST['preco']}'
 )";
             
@@ -110,18 +118,13 @@ if(isset($_POST) && !empty($_POST) ){
 <?php } ?>
 
 <div class="form-group">
-<label>Nome:</label>
+<label>Título:</label>
 <input class="form-control" type="text" id="text" name="titulo" style="width: 300px;" />
 </div>
 
 <div class="form-group">
-<label>Autor:</label>
-<input class="form-control" type="text" id="text" name="autor" style="width: 300px;" />
-</div>
-
-<div class="form-group">
-<label>Isbn:</label>
-<input class="form-control" type="text" id="text" name="isbn" style="width: 300px;" />
+<label>Artista:</label>
+<input class="form-control" type="text" id="text" name="artista" style="width: 300px;" />
 </div>
 
 <div class="form-group">
@@ -130,8 +133,18 @@ if(isset($_POST) && !empty($_POST) ){
 </div>
 
 <div class="form-group">
-<label>Editora:</label>
-<input class="form-control" type="text" id="text" name="editora" style="width: 300px;" />
+<label>Ano:</label>
+<input class="form-control" type="text" id="text" name="ano" style="width: 300px;" />
+</div>
+
+<div class="form-group">
+<label>Gravadora:</label>
+<input class="form-control" type="text" id="text" name="gravadora" style="width: 300px;" />
+</div>
+
+<div class="form-group">
+<label>Categoria:</label>
+<input class="form-control" type="text" id="text" name="categoria" style="width: 300px;" />
 </div>
 
 <div class="form-group">

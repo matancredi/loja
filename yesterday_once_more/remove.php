@@ -11,7 +11,7 @@ include("conexao_db.php");
 $erro = "";
 
         
-        $sql = "Delete from livros where id=".$id;
+        $sql = "Delete from discos where id=".$id;
 
 
 
